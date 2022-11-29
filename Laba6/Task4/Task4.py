@@ -7,7 +7,6 @@ def csv_to_list_dict(file_name) -> list[dict]:
     with open(file_name, encoding="utf-8") as f:
         data = f.readlines()
         counter = -1
-        print(data)
         for row in data:
             row = row[:-1] #удаляю символ \n
             row = row.split(",") #преобразовываю строку в список строк
